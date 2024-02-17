@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CoderDocs - Bootstrap Documentation Template For Software Projects</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">MiniJs</span></a></div>
+				</div><!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box d-none d-lg-flex">
+						<!-- <form class="search-form">
+							<input type="text" placeholder="Search the docs..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form> -->
+					</div>
+
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="https://github.com/nad786/My-Own-cutom-Js-Library"><i class="fab fa-github fa-fw"></i></a></li>
+					</ul><!--//social-list-->
+				</div><!--//docs-top-utilities-->
+			</div><!--//container-->
+		</div><!--//branding-->
+	</header><!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Getting started</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Installation</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Basic Usage</a></li>
+				
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Features</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">minijs-if</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">minijs-text</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">minijs-attr</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">minijs-class</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">minijs-disabled</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-6">minijs-for</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-7">minijs-input</a></li>
+					
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Other Features</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">prefix</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Parent Selector</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Detect Value Changes</a></li>
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+						class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Reactive Form</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Update Controls</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Update Controls Value</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Retreive Form Data</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Exposed properties</a></li>
+					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
+								class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span
+								class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
+								class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li> -->
+				</ul>
+
+			</nav><!--//docs-nav-->
+		</div><!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2019-06-01</span>
+						</h1>
+						<section class="docs-intro">
+							<p>
+								MiniJs:- Your Gateway to Lightweight and Effortless JavaScript Magic!
+
+								Embark on a seamless journey into the world of web development with MiniJs, a
+								feather-light and user-friendly JavaScript library. Designed with simplicity and
+								efficiency in mind, MiniJs leverages the power of the Observable-slim library to
+								effortlessly detect changes within objects. What sets MiniJs apart is its ingenious
+								approach - navigating through object paths, it dynamically identifies associated
+								elements using custom attributes, enabling you to execute operations with unparalleled
+								ease.<br><br>
+
+								Say goodbye to complexity and hello to a coding experience that is both intuitive and
+								swift. MiniJs is your trusted companion for creating dynamic, responsive, and
+								interactive web applications. Join us as we unravel the simplicity and potential
+								encapsulated within the MiniJs Library, where lightweight meets high performance.
+								
+							</p>
+
+							<p style="background-color: beige;">
+								Note:- "md-" is prefix, we can customised/modified
+							</p>
+						</section><!--//docs-intro-->
+
+						<h5>Github Code Example:</h5>
+
+						<!-- ** Embed github code starts ** -->
+						<script src="https://gist.github.com/nad786/4b02db15929f560d5972d92143d9a6d6.js"></script>
+						<script src="https://gist.github.com/nad786/6ff248aa19459ccdb8c7900e90d87838.js"></script>
+						<!-- ** Embed github code ends ** -->
+
+						<p>
+							If you modifed dynamicValue using miniJsInstance then that will reflect in UI. where we used that varible
+						</p>
+			</div><!--//docs-code-block-->
+
+	
+
+
+
+			</header>
+			</article>
+
+			<article class="docs-article" id="section-2">
+				<header class="docs-header">
+					<h1 class="docs-heading">Features</h1>
+					<section class="docs-intro">
+						<p>If offers several feature to use</p>
+					</section><!--//docs-intro-->
+				</header>
+				<section class="docs-section" id="item-2-1">
+					<h2 class="section-heading">Installation</h2>
+					<p>To use MiniJS in your project, include the following script tag in your HTML:</p>
+					<pre class="script">
+						<code>
+&#60;script src="your-path/observable-slim.js"></script>
+&#60;script src="your-path/MiniJs.js"></script>
+						</code>
+					</pre>
+
+				</section><!--//section-->
+
+				<section class="docs-section" id="item-2-2">
+					<h2 class="section-heading">Basic Usages</h2>
+					<p>It is usefull when your application is small. It generates less than 30kb bundle size to boost up performance of your application</p>
+					<p>Initialize MiniJS and start detecting object changes:</p>
+					<pre>
+						<code>
+//html
+&#60;h1 md-text="key: {{key}}">&#60;/h1>
+
+//JS
+const myObject = MiniJs.create({
+	key: "value",                     //show text in UI=> key: value
+});
+myObject.key = "new Value";          //show text in UI=> key: new Value
+						</code>
+					</pre>
+				</section><!--//section-->
+			</article><!--//docs-article-->
+
+
+			<article class="docs-article" id="section-3">
+				<header class="docs-header">
+					<h1 class="docs-heading">Feature</h1>
+					<section class="docs-intro">
+						<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+							finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec
+							eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae
+							dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+					</section><!--//docs-intro-->
+				</header>
+				<section class="docs-section" id="item-3-1">
+					<h2 class="section-heading">Showing and Hiding Elements</h2>
+					<p>One of the key features of MiniJS is its ability to dynamically show or hide elements based on specified conditions. This can be particularly useful for creating responsive and interactive user interfaces.</p>
+					<h4>Usage</h4>
+					<p>To show or hide elements using MiniJS, you can modified your properties to true or false.</p>
+
+					<pre>
+						<code>
+//html
+
+&#60;div minijs-if="cond">if cond is true&#60;/div>
+&#60;div minijs-if="!cond">if cond is false&#60;/div>
+
+const instance = MiniJs.create({
+	cond: true, 
+});
+instance.cond = false;
+
+						</code>
+					</pre>
+					<p>We can write any expression to minijs-if. it will evalute and show and hide based on result</p>
+				</section><!--//section-->
+
+				<section class="docs-section" id="item-3-2">
+					<h2 class="section-heading">String Interpolation</h2>
+					<p>MiniJs simplifies dynamic content population through string interpolation. This feature allows you to bind and update text content.</p>
+					<h4>Usage</h4>
+					<p>To use string interpolation in MiniJs, you can leverage the minijs-text attribute in your HTML. This attribute associates an element with a specific key, and its content will be dynamically updated when the associated key changes.</p>
+					<pre>
+						<code>
+//html
+&#60;div>
+	&#60;p minijs-text="greeting">&#60;/p>				//Hello
+	&#60;p minijs-text="{{greeting}} John!">&#60;/p>		//Hello John
+&#60;/div>
+
+//js
+const instance = MiniJs.create({
+    greeting: 'Hello', 
+});
+						</code>
+					</pre>
+				</section><!--//section-->
+
+				<section class="docs-section" id="item-3-3">
+					<h2 class="section-heading">Updating Dynamic Attributes</h2>
+					<p>MiniJs simplifies the process of dynamically updating HTML attributes with the minijs-attr directive. This feature allows you to bind and update attributes dynamically based on specified values, providing a flexible way to manipulate elements in your web application.</p>
+					<h4>Usage</h4>
+					<p>To use the dynamic attribute updating feature in MiniJs, you can leverage the minijs-attr attribute in your HTML. This attribute allows you to specify attribute-value pairs that will be dynamically updated based on changes in your data object.</p>
+					<h5>Example</h5>
+					<pre>
+						<code>
+<!-- Your HTML -->
+&#60;div>
+  &#60;p minijs-attr="'data-id' = dataId">Element with dynamic data-id attribute&#60;/p>
+  &#60;img src="placeholder.jpg" alt="Image" minijs-attr="'src' = imageUrl; 'alt' = imageAlt">
+&#60;/div>
+
+<!--Your JS-->
+const instance = MiniJs.create({
+    imageUrl: "new_image.jpg",
+    imageAlt: "New Image Alt Text",
+    dataId: "1234"
+})
+						</code>
+					</pre>
+				</section><!--//section-->
+
+				<section  class="docs-section" id="item-3-4">
+					<h2 class="section-heading">Updating Dynamic Classes</h2>
+					<p>MiniJs simplifies dynamic class management by providing the minijs-class directive. This feature allows you to conditionally apply or remove CSS classes based on specified conditions, enabling dynamic styling in your web application.</p>
+					<h4>Usage</h4>
+					<p>To use dynamic class updating in MiniJs, leverage the minijs-class attribute in your HTML. This attribute allows you to specify class-condition pairs that will be dynamically applied or removed based on changes in your data object.</p>
+					<h5>Example</h5>
+					<pre>
+						<code>
+<!-- Your HTML -->
+&#60;div>
+  &#60;div minijs-class="'active' = data.isActive">Dynamic Class Based on Condition&#60;/div>
+  &#60;button minijs-class="'btn-primary' = isPrimary, 'btn-secondary' = !isPrimary">Toggle Primary/Secondary&#60;/button>
+&#60;/div>
+
+<!--your JS-->
+const instance = MiniJs.create({
+    isPrimary: true
+})
+						</code>
+					</pre>
+					<p>minijs-class="'className' = expression"</p>
+					<p>you can use any type of expression, it will evalute and based on that result, it will toggle your class</p>
+				</section>
+
+				<section  class="docs-section" id="item-3-5">
+					<h2 class="section-heading">Dynamically Disabling Elements</h2>
+					<p>MiniJs provides a convenient way to dynamically disable HTML elements using the minijs-disabled directive. This feature enables you to conditionally enable or disable user interactions on elements based on specified expressions.</p>
+					<h4>Usage</h4>
+					<p>To leverage the dynamic disabling feature in MiniJs, use the minijd-disabled attribute in your HTML. This attribute allows you to specify an expression that evaluates to a boolean value. If the expression evaluates to true, the element will be disabled; otherwise, it will be enabled.</p>
+					<h5>Example</h5>
+					<pre>
+						<code>
+<!-- Your HTML -->
+&#60;button minijs-disabled="isDisabled">Click me&#60;/button>
+&#60;input type="text" minijs-disabled="inputDisabled">
+
+<!--your JS-->
+const instance = MiniJs.create({
+    isDisabled: true
+})
+						</code>
+					</pre>
+				</section>
+
+
+				<section  class="docs-section" id="item-3-6">
+					<h2 class="section-heading">Iterating Over Elements with MiniJs</h2>
+					<p>MiniJs simplifies the process of dynamically creating HTML elements through iteration using the minijs-for directive. This feature enables you to loop through a list and generate elements based on the specified template.</p>
+					<h4>Usage</h4>
+					<p>To utilize the iteration feature in MiniJs, use the minijs-for attribute in your HTML. This attribute allows you to specify a list, and for each item in the list, MiniJs will dynamically generate elements based on the provided template.</p>
+					<h5>Example</h5>
+					<pre>
+						<code>
+<!-- Your HTML -->
+&#60;div minijs-for="list" minijs-let="item">
+	&#60;p minijs-text="item">&#60;/p>
+&#60;/div>
+<!--your JS-->
+const instance = MiniJs.create({
+    list: ['Apple', 'Banana', 'Orange', 'Grapes']
+})
+						</code>
+					</pre>
+					<p>In this example, the minijs-for attribute is used to specify the list to iterate over, and the minijs-let attribute is used to define the template for each item.</p>
+				</section>
+
+
+				<section  class="docs-section" id="item-3-7">
+					<h2 class="section-heading">Two-Way Data Binding with MiniJs</h2>
+					<p>MiniJs simplifies the implementation of two-way data binding for input fields using the minijs-input directive. This feature allows you to seamlessly bind the value of an input field to a variable in your data object, ensuring automatic updates in both directions.</p>
+					<h4>Usage</h4>
+					<p>To enable two-way data binding with MiniJs, use the minijs-input attribute in your HTML. This attribute associates an input field with a variable in your data object, creating a dynamic link that keeps both the input field and the data object in sync.</p>
+					<h5>Example</h5>
+					<pre>
+						<code>
+<!-- Your HTML -->
+&#60;input input type="text" minijs-input="userName">
+&#60;p minijs-text="userName">&#60;/p>
+<!--your JS-->
+const instance = MiniJs.create({
+    userName: "John Doe"
+})
+						</code>
+					</pre>
+					<p>In this example, the minijs-input attribute is used to bind the value of the input field to the userName variable in the data object.</p>
+				</section>
+
+			</article><!--//docs-article-->
+
+			
+
+			<article class="docs-article" id="section-5">
+				<header class="docs-header">
+					<h1 class="docs-heading">Other Features (options)</h1>
+					<section class="docs-intro">
+						<p>Default custom attribute starts from md-. but you can changed it dynamically</p>
+					<pre><code>
+MiniJs.create(object, otions)
+To create miniJs instacne, we have to use MiniJs.create functon, which takes 2 argumanets
+					</code></pre>
+					<p><b>first arguments</b> is your actual object data, which you want to use in your application.</p>
+					<p><b>second arguments </b>is optional.</p>
+
+					</code></pre>
+					</section><!--//docs-intro-->
+				</header>
+				<section class="docs-section" id="item-5-1">
+					<h2 class="section-heading">prefix</h2>
+					<p>Default custom attribute starts from md-. but you can changed it dynamically</p>
+					<pre><code>
+const instance = MiniJs.create({
+     name: "john Doe"
+   }, 
+   {prefix = 'wns-'}
+  )
+					</code></pre>
+					<p>now your custom attribute start from wns-, then only it works</p>
+
+				</section><!--//section-->
+
+				<section class="docs-section" id="item-5-2">
+					<h2 class="section-heading">Parent Selector</h2>
+					<p>By Default it searches inside your whole application to perform operation when ever object data changed.<br>
+					but you can changed it using <b>parentSelector</b> options to boost your application performance</p>
+						<pre><code>
+const instance = MiniJs.create({
+	 name: "john Doe"
+   }, 
+   {parentSelector = '#main-container'}
+  )
+						</code></pre>
+						<p>now your name field only works inside main-container elements</p>
+				</section><!--//section-->
+
+				<section class="docs-section" id="item-5-3">
+					<h2 class="section-heading">Detect Value Changes</h2>
+					<p>If you want to perform some action, if some object field modified, then you can use <b>detectValueChanges</b> options</p>
+					<br>
+					<p>To call you function if some field value changed</p>
+					<pre>
+						<code>
+const instance = MiniJs.create({
+	user: {
+	  userName: "john.doe",
+	}
+  }, 
+  {detectValueChanges: {
+     user.userName: () => {
+       // to perform your operation
+       //like to check in db if this user exists or not
+      }
+    }
+  }
+ )
+						</code>
+					</pre>
+				</section><!--//section-->
+			</article><!--//docs-article-->
+
+			<article class="docs-article" id="section-4">
+				<header class="docs-header">
+					<h1 class="docs-heading">Reactive Form Validation with MiniJs</h1>
+					<section class="docs-intro">
+						<p>MiniJs simplifies the implementation of reactive form validation by providing a convenient interface to build and manage form controls. This feature allows you to define and validate form controls easily, ensuring a smooth user experience.</p>
+						<h4>Usage</h4>
+						<p>To implement reactive form validation with MiniJs, you can use the MiniJsFormValidation class to build your form and form controls.</p>
+						<p>To use reactive form in MiniJs, you need to add 
+							<b>&#60;script src="Your_path/MiniJsForm.js">&#60;/script> </b><br>
+							to your application
+						</p>
+
+						<h5>Sample Code for HTML</h5>
+						<script src="https://gist.github.com/nad786/0ae54e486aaeac2668630b9d710a43ed.js"></script>
+						<h5>Sample Code for JS</h5>
+						<script src="https://gist.github.com/nad786/38dac7b548ea5c6b175e2523b9e73e3b.js"></script>
+					
+						it return formInstance, you can use this instance to perform other operation
+						<h4>Exposed Api by Reactive Form</h4>
+						<p>
+							<b>updateControls</b>:- to update/add controls<br>
+							<b>patchValues</b>:- to modified controls value<br>
+							<b>getValues</b>:- to get forms value in json format<br>
+							<b>destroy</b>:- to destroy formInstance and to remove event listeners
+						</p>
+
+						<p style="background-color: beige;">Note:- MiniJsFormValidaion.buildForm also takes 2 arguments.
+							<br>you have to pass form selector options, to use that form only
+							<br>else it takes first form and perform operations</p>
+							<h5>Example</h5>
+							<pre>
+								<code>
+const formInstance = MiniJsFormValidaion.buildForm({
+	name: new FormControl("", [Validators.required, Validators.minLength(3), Validators.maxLength(20)]),
+	email: new FormControl("", [Validators.required, Validators.email]),
+}, 
+  {selector: '#myForm'}
+)
+								</code>
+							</pre>
+							<p>form selector uses as parentSelector optiosn and other options you can use same as we dicuss in other features like.</p>
+					</section><!--//docs-intro-->
+				</header>
+				<section class="docs-section" id="item-4-1">
+					<h2 class="section-heading">Dynamic Update Controls</h2>
+					<p>you can update controls dynamically.</p>
+					<h4>Example</h4>
+					<pre>
+						<code>
+formInstance.updateControls({
+	name: new FormControl(""),
+	newField: new FormControl("", Validators.required),
+	// Add more form controls as needed
+})
+						</code>
+					</pre>
+					
+				</section><!--//section-->
+
+				<section class="docs-section" id="item-4-2">
+					<h2 class="section-heading">Modified Controls Values</h2>
+					<p>you can modified controls value manually.</p>
+					<h4>Example</h4>
+					<pre>
+						<code>
+formInstance.patchValues({
+	name: "John Doe",
+	// update more form value as needed
+})
+						</code>
+					</pre>
+
+				</section><!--//section-->
+
+
+			
+				<section class="docs-section" id="item-4-3">
+					<h2 class="section-heading">Retreive Form Value</h2>
+					<p>you can get form values controls value manually.</p>
+					<pre>
+						<code>
+formInstance.getValues()
+						</code>
+					</pre>
+					<h4>Sample result</h4>
+					<pre>
+						<code>
+{
+	name: "john Doe",
+	userName: "john.doe",
+	// more form-data
+}
+						</code>
+					</pre>
+				</section>
+				<section class="docs-section" id="item-4-4">
+					<h2 class="section-heading">Exposed more field to generata error msg</h2>
+					<pre>
+						<code>
+Note:- contactForm is formGroup attribute value of form.
+       name is formControlName attribute value of form element.		
+
+<b>contactForm.controls.name.error</b>:- return default error message
+<b>contactForm.controls.name.dirty</b>:- return true if element has been modified
+<b>contactForm.controls.name.touched</b>:- return true if user has touched that field
+<b>contactForm.controls.name.valid</b>:- return true if that element is valid
+<b>contactForm.controls.name.value</b>:- return actual value, using this field you can modified control value
+<b>contactForm.controls.name.errors.required</b>:- return true if it failed to validate "required validation"
+<b>contactForm.controls.name.errors.minLength</b>:- return true if it failed to validate "minLength validation"
+<b>contactForm.controls.name.errors.maxLength</b>:- return true if it failed to validate "manLength validation"
+<b>contactForm.controls.name.errors.min</b>:- return true if it failed to validate "min validation"
+<b>contactForm.controls.name.errors.max</b>:- return true if it failed to validate "max validation"
+<b>contactForm.controls.name.errors.pattern</b>:- return true if it failed to validate "pattern validation"
+<b>contactForm.controls.name.errors.custom</b>:- return true if it failed to validate "custom validation"
+						</code>
+					</pre>
+				</section><!--//section-->
+			</article><!--//docs-article-->
+
+		
+		</div>
+	</div>
+	</div><!--//docs-wrapper-->
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>
