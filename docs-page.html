@@ -90,18 +90,18 @@
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-6">minijs-for</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-7">minijs-input</a></li>
 					
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
-								class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Other Features</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">prefix</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Parent Selector</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Detect Value Changes</a></li>
-
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Other Features</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">prefix</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Parent Selector</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Detect Value Changes</a></li>
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
 						class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Reactive Form</a></li>
-			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Update Controls</a></li>
-			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Update Controls Value</a></li>
-			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Retreive Form Data</a></li>
-			<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Exposed properties</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Update Controls</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Update Controls Value</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Retreive Form Data</a></li>
+			<li class="nav-item"><a class="nav-link scrollto" href="#item-5-4">Exposed properties</a></li>
 					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
 								class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
@@ -178,10 +178,8 @@
 
 			<article class="docs-article" id="section-2">
 				<header class="docs-header">
-					<h1 class="docs-heading">Features</h1>
-					<section class="docs-intro">
-						<p>If offers several feature to use</p>
-					</section><!--//docs-intro-->
+					<h1 class="docs-heading">Getting Started</h1>
+					
 				</header>
 				<section class="docs-section" id="item-2-1">
 					<h2 class="section-heading">Installation</h2>
@@ -384,7 +382,7 @@ const instance = MiniJs.create({
 
 			
 
-			<article class="docs-article" id="section-5">
+			<article class="docs-article" id="section-4">
 				<header class="docs-header">
 					<h1 class="docs-heading">Other Features (options)</h1>
 					<section class="docs-intro">
@@ -399,7 +397,7 @@ To create miniJs instacne, we have to use MiniJs.create functon, which takes 2 a
 					</code></pre>
 					</section><!--//docs-intro-->
 				</header>
-				<section class="docs-section" id="item-5-1">
+				<section class="docs-section" id="item-4-1">
 					<h2 class="section-heading">prefix</h2>
 					<p>Default custom attribute starts from md-. but you can changed it dynamically</p>
 					<pre><code>
@@ -413,7 +411,7 @@ const instance = MiniJs.create({
 
 				</section><!--//section-->
 
-				<section class="docs-section" id="item-5-2">
+				<section class="docs-section" id="item-4-2">
 					<h2 class="section-heading">Parent Selector</h2>
 					<p>By Default it searches inside your whole application to perform operation when ever object data changed.<br>
 					but you can changed it using <b>parentSelector</b> options to boost your application performance</p>
@@ -427,7 +425,7 @@ const instance = MiniJs.create({
 						<p>now your name field only works inside main-container elements</p>
 				</section><!--//section-->
 
-				<section class="docs-section" id="item-5-3">
+				<section class="docs-section" id="item-4-3">
 					<h2 class="section-heading">Detect Value Changes</h2>
 					<p>If you want to perform some action, if some object field modified, then you can use <b>detectValueChanges</b> options</p>
 					<br>
@@ -452,7 +450,7 @@ const instance = MiniJs.create({
 				</section><!--//section-->
 			</article><!--//docs-article-->
 
-			<article class="docs-article" id="section-4">
+			<article class="docs-article" id="section-5">
 				<header class="docs-header">
 					<h1 class="docs-heading">Reactive Form Validation with MiniJs</h1>
 					<section class="docs-intro">
@@ -468,7 +466,28 @@ const instance = MiniJs.create({
 						<script src="https://gist.github.com/nad786/0ae54e486aaeac2668630b9d710a43ed.js"></script>
 						<h5>Sample Code for JS</h5>
 						<script src="https://gist.github.com/nad786/38dac7b548ea5c6b175e2523b9e73e3b.js"></script>
-					
+
+						<p>In this example, the MiniJsFormValidation class is used to build the form, and form controls are defined with specific validation rules using the FormControl class.</p>
+
+						<h4>API Reference</h4>
+						<pre><code>MiniJsFormValidation.buildForm(controlConfig, options)</code></pre>
+
+						<h5>Parameters</h5>
+						<pre><code>
+controlConfig (object): An object where each key represents the form control name and the corresponding value is a FormControl instance.
+options: which gives extra features to your application
+						</code></pre>
+						<h5>Description</h5>
+						<pre><code>The buildForm method creates a form instance with the specified form controls.</code></pre>
+						<pre><code>FormControl(initialValue, validators, pattern(optional))</code></pre>
+						<h4>Parameters</h4>
+						<pre><code>initialValue (any): The initial value for the form control.</code></pre>
+						<pre><code>validators (array of functions): An array of validation functions to validate the form control </code></pre>
+						<pre><code>pattern (regex pattern): To prevent typying charcter which doesn't match with given regex.</code></pre>
+						<p style="background-color: beige;">you can also add allowed parren to custom attribute to form element, which prevent to type not allowed char. <br>Ex:- md-allowedChar="/[a-zA-Z \b]+/"</p>
+
+						<p>The FormControl constructor creates a form control with the specified initial value, validation functions and allowed pattern.</p>
+
 						it return formInstance, you can use this instance to perform other operation
 						<h4>Exposed Api by Reactive Form</h4>
 						<p>
@@ -495,7 +514,7 @@ const formInstance = MiniJsFormValidaion.buildForm({
 							<p>form selector uses as parentSelector optiosn and other options you can use same as we dicuss in other features like.</p>
 					</section><!--//docs-intro-->
 				</header>
-				<section class="docs-section" id="item-4-1">
+				<section class="docs-section" id="item-5-1">
 					<h2 class="section-heading">Dynamic Update Controls</h2>
 					<p>you can update controls dynamically.</p>
 					<h4>Example</h4>
@@ -511,7 +530,7 @@ formInstance.updateControls({
 					
 				</section><!--//section-->
 
-				<section class="docs-section" id="item-4-2">
+				<section class="docs-section" id="item-5-2">
 					<h2 class="section-heading">Modified Controls Values</h2>
 					<p>you can modified controls value manually.</p>
 					<h4>Example</h4>
@@ -528,7 +547,7 @@ formInstance.patchValues({
 
 
 			
-				<section class="docs-section" id="item-4-3">
+				<section class="docs-section" id="item-5-3">
 					<h2 class="section-heading">Retreive Form Value</h2>
 					<p>you can get form values controls value manually.</p>
 					<pre>
@@ -547,7 +566,7 @@ formInstance.getValues()
 						</code>
 					</pre>
 				</section>
-				<section class="docs-section" id="item-4-4">
+				<section class="docs-section" id="item-5-4">
 					<h2 class="section-heading">Exposed more field to generata error msg</h2>
 					<pre>
 						<code>
